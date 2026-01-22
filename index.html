@@ -1,56 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/yield-tra/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Инновации на пальцах — yield-tra.blog</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="module" crossorigin src="/yield-tra/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/yield-tra/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/yield-tra/assets/styles-CrfgOL5Q.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      Yield<span>Tra</span>
+    </a>
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="#" class="nav__link">Главная</a></li>
+        <li><a href="#about" class="nav__link">О платформе</a></li>
+        <li><a href="#benefits" class="nav__link">Преимущества</a></li>
+        <li><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--outline">Связаться</a>
+      <button class="burger" aria-label="Menu">
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <span class="hero__badge" data-aos="fade-down">Платформа года в Европе</span>
+            <h1 class="hero__title" id="hero-title">
+                Инновации на пальцах: Постройте карьеру, которая работает на вас
+            </h1>
+            <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="400">
+                Передовая цифровая инфраструктура и AI-инструменты для реальных задач.
+                Откройте новые возможности и расширьте горизонты своего проекта прямо сейчас.
+            </p>
+            <div class="hero__btns" data-aos="fade-up" data-aos-delay="600">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#about" class="btn btn--outline">Узнать детали</a>
+            </div>
+        </div>
+        <div class="hero__image" data-aos="zoom-in" data-aos-delay="200">
+            <div class="hero__circle"></div>
+            <img src="img/placeholder.png" alt="Innovation" class="hero__img-main">
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container about__grid">
+        <div class="about__image-wrapper" data-aos="fade-right">
+            <img src="img/placeholder.png" alt="Education" class="about__img">
+            <div class="about__experience-badge">
+                <strong>10+</strong>
+                <span>лет опыта в AI</span>
+            </div>
+        </div>
+        <div class="about__content" data-aos="fade-left">
+            <span class="section-subtitle">О платформе</span>
+            <h2 class="section-title">Легко разобраться даже без опыта</h2>
+            <p class="about__text">
+                Мы создали <strong>пошаговый путь, понятный каждому</strong>. Наша передовая цифровая инфраструктура
+                позволяет вам переосмыслить подход к развитию, используя инструменты, которые меняют правила игры.
+            </p>
+            <ul class="about__features">
+                <li><i class="fas fa-check-circle"></i> Быстрый и лёгкий старт за 2 минуты</li>
+                <li><i class="fas fa-check-circle"></i> Удобная адаптация без сложностей</li>
+                <li><i class="fas fa-check-circle"></i> Поддержка экспертов на всех этапах</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Получить больше информации</a>
+        </div>
+    </div>
+</section>
+<section class="benefits" id="benefits">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-subtitle">Почему мы?</span>
+            <h2 class="section-title">Решения, которые меняют правила игры</h2>
+        </div>
+
+        <div class="benefits__grid">
+            <div class="flip-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="flip-card__inner">
+                    <div class="flip-card__front">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Технология нового поколения</h3>
+                    </div>
+                    <div class="flip-card__back">
+                        <p>Используйте передовую цифровую инфраструктуру для масштабирования ваших идей уже сегодня.</p>
+                        <a href="#contact" class="btn btn--white">Узнать детали</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="flip-card__inner">
+                    <div class="flip-card__front">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Пассивный доход</h3>
+                    </div>
+                    <div class="flip-card__back">
+                        <p>Программа пассивного дохода на базе инноваций, доступная в странах ЕС.</p>
+                        <a href="#contact" class="btn btn--white">Начать сейчас</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" data-aos="flip-left" data-aos-delay="500">
+                <div class="flip-card__inner">
+                    <div class="flip-card__front">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI-инструменты</h3>
+                    </div>
+                    <div class="flip-card__back">
+                        <p>Практические AI-решения для реальных задач. Постройте карьеру будущего вместе с нами.</p>
+                        <a href="#contact" class="btn btn--white">Запросить доступ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="innovations" id="innovations">
+    <div class="container">
+        <div class="innovations__grid">
+            <div class="innovations__content" data-aos="fade-right">
+                <span class="section-subtitle">Будущее уже здесь</span>
+                <h2 class="section-title">Передовая цифровая инфраструктура</h2>
+                <p class="innovations__text">
+                    Мы внедряем технологии, которые меняют правила игры. Наша платформа — это не просто обучение, это
+                    экосистема, где AI-инструменты работают на вас 24/7.
+                </p>
+                <div class="innovations__stats">
+                    <div class="stat-item">
+                        <strong>99.9%</strong>
+                        <span>Аптайм системы</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>24/7</strong>
+                        <span>AI-поддержка</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn--primary">Оценить перспективы</a>
+            </div>
+
+            <div class="innovations__visual" data-aos="fade-left">
+                <div class="floating-card card-1">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Безопасность данных</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-microchip"></i>
+                    <span>Нейронные сети</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-cloud-bolt"></i>
+                    <span>Облачные вычисления</span>
+                </div>
+                <div class="innovations__main-image">
+                    <img src="img/placeholder.png" alt="Tech Infrastructure">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="logo footer__logo">Yield<span>Tra</span></a>
+      <p class="footer__description">
+        Образовательная платформа нового поколения. Переосмыслите подход к развитию вместе с нами.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Меню</h4>
+      <ul class="footer__list">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#about">О платформе</a></li>
+        <li><a href="#benefits">Преимущества</a></li>
+        <li><a href="#blog">Блог</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Документы</h4>
+      <ul class="footer__list">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contact-info">
+        <li>
+          <i class="fas fa-map-marker-alt"></i>
+          <span>12 Rue de la Paix, 75002 Paris, France</span>
+        </li>
+        <li>
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+33189480058">+33 1 89 48 00 58</a>
+        </li>
+        <li>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:hello@yield-tra.blog">hello@yield-tra.blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <p>&copy; 2026 YieldTra. Все права защищены. Предложение активно в странах ЕС.</p>
   </div>
 </footer>
-
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
   </body>
 </html>
